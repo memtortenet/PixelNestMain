@@ -5,14 +5,15 @@
     <script>
         function createBackLink() {
             var referrer = document.referrer;
-            var backLink = '';
-            var container = document.getElementById("backLinkContainer");
+            var containers = document.querySelectorAll(".backLinkContainer");
 
-            if (referrer) {
-                var previousLink = document.createElement("a");
-                previousLink.href = referrer;
-                previousLink.textContent = "Vissza az előző oldalra";
-                container.parentNode.insertBefore(previousLink, container.nextSibling);
+            if (referrer && referrer !== '') {
+                containers.forEach(container => {
+                    var previousLink = document.createElement("a");
+                    previousLink.href = referrer;
+                    previousLink.textContent = "Vissza az előző oldalra";
+                    container.parentNode.insertBefore(previousLink, container);
+                });
             }
         }
 
@@ -22,7 +23,7 @@
     </script>
 </head>
 <body>
-    <div id="backLinkContainer">
+    <div class="backLinkContainer">
         <a href="../../">Vissza a főoldalra</a>
     </div>
 
@@ -30,27 +31,27 @@
     <p>Narancs, Tetves és Dugó leírás</p>
 
 
+
         <h2>Videók</h2>
         <ul>
                 <li>
                     <strong>Narancs, Tetves és Dugó videó 1</strong><br />
-                    <iframe src="https://www.youtube.com/embed/xKiRGBtkLP8" allowfullscreen></iframe><br />
+                    <iframe src="https://www.youtube.com/embed/xKiRGBtkLP8" allowfullscreen loading="lazy"></iframe><br />
                     <p>Narancs, Tetves és Dugó videó 1 leírás</p>
                 </li>
                 <li>
                     <strong>Narancs, Tetves és Dugó videó 2</strong><br />
-                    <iframe src="https://www.youtube.com/embed/xKiRGBtkLP8" allowfullscreen></iframe><br />
+                    <iframe src="https://www.youtube.com/embed/xKiRGBtkLP8" allowfullscreen loading="lazy"></iframe><br />
                     <p>Narancs, Tetves és Dugó videó 2 leírás</p>
                 </li>
                 <li>
                     <strong>Narancs, Tetves és Dugó videó 3</strong><br />
-                    <iframe src="https://www.youtube.com/embed/xKiRGBtkLP8" allowfullscreen></iframe><br />
+                    <iframe src="https://www.youtube.com/embed/xKiRGBtkLP8" allowfullscreen loading="lazy"></iframe><br />
                     <p>Narancs, Tetves és Dugó videó 3 leírás</p>
                 </li>
         </ul>
 
-
-    <div id="backLinkContainer">
+    <div class="backLinkContainer">
         <a href="../../">Vissza a főoldalra</a>
     </div>
 </body>
