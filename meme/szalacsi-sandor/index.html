@@ -3,27 +3,21 @@
     <meta charset="UTF-8">
     <title>Szalacsi Sándor - Magyar Mémtörténeti Múzeum</title>
     <script>
-        function createBackLink() {
+        document.addEventListener('DOMContentLoaded', function () {
             var referrer = document.referrer;
-            var containers = document.querySelectorAll(".backLinkContainer");
+            var backLink = document.querySelector(".backLink");
 
-            if (referrer && referrer !== '') {
-                containers.forEach(container => {
-                    var previousLink = document.createElement("a");
-                    previousLink.href = referrer;
-                    previousLink.textContent = "Vissza az előző oldalra";
-                    container.parentNode.insertBefore(previousLink, container);
-                });
+            if (referrer && referrer !== window.location.href) {
+                backLink.href = referrer;
+            } else {
+                backLink.href = "../../";
             }
-        }
-
-        window.onload = function () {
-            createBackLink();
-        };
+        });
     </script>
 </head>
 <body>
     <div class="backLinkContainer">
+        <a href="../../" class="backLink">Vissza az előző oldalra</a>
         <a href="../../">Vissza a főoldalra</a>
     </div>
 
@@ -44,12 +38,13 @@
         <ul>
                 <li>
                     <strong>Szalacsi Sándor videó 1</strong><br />
-                    <iframe src="https://www.youtube.com/embed/xKiRGBtkLP8" allowfullscreen loading="lazy"></iframe><br />
+                    <iframe src="https://www.youtube.com/embed/xKiRGBtkLP8" allowfullscreen></iframe><br />
                     <p>Szalacsi Sándor videó 1 leírás</p>
                 </li>
         </ul>
 
     <div class="backLinkContainer">
+        <a href="../../" class="backLink">Vissza az előző oldalra</a>
         <a href="../../">Vissza a főoldalra</a>
     </div>
 </body>
