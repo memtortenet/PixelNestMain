@@ -2,34 +2,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Szalacsi Sándor - Magyar Mémtörténeti Múzeum</title>
+    <script>
+        function createBackLink() {
+            var referrer = document.referrer;
+            var backLink = '';
+            var container = document.getElementById("backLinkContainer");
+
+            if (referrer) {
+                var previousLink = document.createElement("a");
+                previousLink.href = referrer;
+                previousLink.textContent = "Vissza az előző oldalra";
+                container.parentNode.insertBefore(previousLink, container.nextSibling);
+            }
+        }
+
+        window.onload = function () {
+            createBackLink();
+        };
+    </script>
 </head>
 <body>
-    <a href="../../index.html">Vissza a főoldalra</a>
-    <a href="javascript:history.back()">Vissza az előző oldalra</a>
+    <div id="backLinkContainer">
+        <a href="../../">Vissza a főoldalra</a>
+    </div>
 
     <h1>Szalacsi Sándor</h1>
-    <p>Szalacsi Sándor egy ikonikus magyar mém, amely egy interjú alapján terjedt el...</p>
+    <p>Szalacsi Sándor leírás</p>
 
         <h2>Képek</h2>
         <ul>
                 <li>
-                    <strong>Szalacsi az interjún</strong><br />
-                    <img src="https://drive.google.com/uc?export=view&id=your-image-id1" alt="szalacsi-interju" /><br />
-                    <p>Szalacsi híres interjújának egy pillanata</p>
+                    <strong>Szalacsi Sándor kép 1</strong><br />
+                    <img src="https://drive.google.com/uc?export=view&id=your-image-id1" alt="szalacsi-sandor-kep-1" /><br />
+                    <p>Szalacsi Sándor kép 1 leírás</p>
                 </li>
         </ul>
 
         <h2>Videók</h2>
         <ul>
                 <li>
-                    <strong>Szalacsi Interjú</strong><br />
+                    <strong>Szalacsi Sándor videó 1</strong><br />
                     <iframe src="https://www.youtube.com/embed/xKiRGBtkLP8" allowfullscreen></iframe><br />
-                    <p>A híres interjú videója</p>
+                    <p>Szalacsi Sándor videó 1 leírás</p>
                 </li>
         </ul>
 
 
-    <a href="../../index.html">Vissza a főoldalra</a>
-    <a href="javascript:history.back()">Vissza az előző oldalra</a>
+    <div id="backLinkContainer">
+        <a href="../../">Vissza a főoldalra</a>
+    </div>
 </body>
 </html>
