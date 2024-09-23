@@ -2,82 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Polgár Jenő - Magyar Mémtörténeti Múzeum</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var referrer = document.referrer;
-            var backLink = document.querySelector(".backLink");
-
-            if (referrer && referrer !== window.location.href) {
-                backLink.href = referrer;
-            } else {
-                backLink.href = "../../";
-            }
-        });
-
-        function loadVideo(url, title, container) {
-            var iframe = document.createElement('iframe');
-            iframe.classList.add('video-iframe');
-            iframe.setAttribute('src', url + '?autoplay=1');
-            iframe.setAttribute('title', 'YouTube videólejátszó - ' + title);
-            iframe.setAttribute('frameborder', '0');
-            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
-            iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
-            iframe.setAttribute('allowfullscreen', 'true');
-
-            container.innerHTML = '';
-            container.appendChild(iframe);
-        }
-    </script>
-    <style>
-        .video-container {
-            position: relative;
-            width: 560px;
-            height: 315px;
-            background-color: #f0f0f0;
-            cursor: pointer;
-        }
-
-        .video-iframe {
-            width: 100%;
-            height: 100%;
-        }
-
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 60px;
-            height: 60px;
-            background: url('/path-to-your-play-button.png') no-repeat center center;
-            background-size: contain;
-            transform: translate(-50%, -50%);
-        }
-
-        .video-thumbnail {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .image-container {
-            width: 560px;
-            height: 315px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            background-color: #f0f0f0;
-            position: relative;
-        }
-
-        .image-thumbnail {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-
-    </style>
+    <link rel="stylesheet" href="../../css/meme.css">
+    <script src="../../js/meme.js" defer></script>
 </head>
 <body>
     <div class="backLinkContainer">
@@ -93,8 +19,8 @@
                     <li>
                         <strong>Polgár Jenő hang 1</strong><br />
                         <div class="video-container" onclick="loadVideo('https://www.youtube.com/embed/xKiRGBtkLP8', 'Polgár Jenő hang 1', this)">
+                            <div class="ytp-thumbnail-overlay" style="background-image: url('https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg');"></div>
                             <div class="play-button"></div>
-                            <img loading="lazy" class="video-thumbnail" src="https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg" alt="polgar-jeno-hang-1-thumbnail" />
                         </div>
                         <p>Polgár Jenő hang 1 leírás</p>
                     </li>
@@ -106,8 +32,8 @@
                     <li>
                         <strong>Polgár Jenő videó 1</strong><br />
                         <div class="video-container" onclick="loadVideo('https://www.youtube.com/embed/xKiRGBtkLP8', 'Polgár Jenő videó 1', this)">
+                            <div class="ytp-thumbnail-overlay" style="background-image: url('https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg');"></div>
                             <div class="play-button"></div>
-                            <img loading="lazy" class="video-thumbnail" src="https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg" alt="polgar-jeno-video-1-thumbnail" />
                         </div>
                         <p>Polgár Jenő videó 1 leírás</p>
                     </li>
