@@ -1,0 +1,9 @@
+﻿User-agent: *
+Disallow: /css/
+Disallow: /js/
+Disallow: /404.html
+Disallow: /legal/
+
+# Allow everything else
+Allow: /
+Sitemap: https://www.mmtm.hu/sitemap.xml

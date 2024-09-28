@@ -1,1 +1,1 @@
-body{font-family:Arial,sans-serif;margin:20px;background-color:#f4f4f4}p{font-size:18px;color:#333}
+html,body{height:100%;margin:0}body{display:flex;flex-direction:column}footer{margin-top:auto}footer p{margin-bottom:0}#searchBar{width:250px}

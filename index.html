@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="TODO: description-t írni! 150-160 karakter">
-    <meta name="keywords" content="TODO: keyword-öket írni!">
+    <meta name="keywords" content="Testkeyword1, Testkeyword2, Testkeyword3">
     <title>Magyar Mémtörténeti Múzeum</title>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZRJJ5SWB9"></script>
@@ -12,19 +12,18 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-6ZRJJ5SWB9');
     </script>
 
     <meta property="og:title" content="Magyar Mémtörténeti Múzeum">
-    <meta property="og:description" content="TODO: og:description-t írni!">
+    <meta property="og:description" content="TODO: description-t írni! 150-160 karakter">
     <meta property="og:image" content="https://www.mmtm.hu/img/featured-image-1200x630.webp">
-    <meta property="og:url" content="https://www.mmtm.hu">
+    <meta property="og:url" content="https://www.mmtm.hu/">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Magyar Mémtörténeti Múzeum">
-    <meta name="twitter:description" content="TODO: twitter:description-t írni!">
+    <meta name="twitter:description" content="TODO: description-t írni! 150-160 karakter">
     <meta name="twitter:image" content="https://www.mmtm.hu/img/featured-image-1200x630.webp">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -34,8 +33,8 @@
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Magyar Mémtörténeti Múzeum",
-            "description": "TODO: description-t írni!",
-            "url": "https://www.mmtm.hu"
+            "description": "TODO: description-t írni! 150-160 karakter",
+            "url": "https://www.mmtm.hu/"
             "image": "https://www.mmtm.hu/img/featured-image-1200x630.webp",
             "author": {
                 "@type": "Organization",
@@ -44,69 +43,119 @@
         }
     </script>
 
-    <link rel="stylesheet" href="css/site.css">
-    <script src="js/site.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css?v=1.0">
+    <link rel="stylesheet" href="/css/site.css?v=1.0">
+    <link rel="stylesheet" href="/css/main.css?v=1.0">
 </head>
 <body>
-    <div>
-        <h2>Social Media:</h2>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.mmtm.hu" target="_blank" rel="noreferrer">Facebook</a>
-        <br />
-        <a href="https://x.com/intent/post?text=Test%20text%0Ahttps://www.mmtm.hu%0A%23testhashtag1%20%23testhashtag2" target="_blank" rel="noreferrer">X (Twitter)</a>
-        <br />
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mmtm.hu" target="_blank" rel="noreferrer">LinkedIn</a>
-        <br />
-        <a href="https://threads.net/intent/post?text=Test%20text%0Ahttps://www.mmtm.hu%0A%23testhashtag" target="_blank" rel="noreferrer">Threads</a>
-        <br />
-        <a href="https://www.reddit.com/submit?url=https://www.mmtm.hu&title=Test%20text" target="_blank" rel="noreferrer">Reddit</a>
-        <br />
-        <a href="http://pinterest.com/pin/create/button/?url=https://www.mmtm.hu" target="_blank" rel="noreferrer">Pinterest</a>
-        <br />
-        <a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.mmtm.hu&caption=Test%20text" target="_blank" rel="noreferrer">Tumblr</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">Mémtörténeti Múzeum</a>
 
-        <h2>Chat & Messaging:</h2>
-        <a href="https://api.whatsapp.com/send?text=Test%20text:%20https://www.mmtm.hu" target="_blank">WhatsApp</a>
-        <br />
-        <a href="fb-messenger://share?link=https://www.mmtm.hu" target="_blank">Facebook Messenger</a>
-        <br />
-        <a href="viber://forward?text=https://www.mmtm.hu" target="_blank">Viber</a>
-        <br />
-        <a href="https://t.me/share/url?url=https://www.mmtm.hu&text=Test%20text" target="_blank">Telegram</a>
-        <br />
-        <a href="https://web.skype.com/share?url=https://www.mmtm.hu" target="_blank">Skype</a>
-        <br />
-        <a href="https://slack.com/intl/en-in/share?text=Test%20text:%20https://www.mmtm.hu" target="_blank">Slack</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <h2>Others:</h2>
-        <a href="mailto:?subject=Test%20text&body=Test%20text:%20https://www.mmtm.hu" target="_blank">Email</a>
-        <br />
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=&su=Test%20text&body=Test%20text:%20https://www.mmtm.hu" target="_blank">Gmail</a>
-        <br />
-        <a href="sms:?body=Test%20text:%20https://www.mmtm.hu" target="_blank">SMS</a>
-        <br />
-        <a href="javascript:void(0)" id="copy-link" onclick="copyToClipboard('https://www.mmtm.hu', this)">Copy Link</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <form class="d-flex me-3">
+                        <input type="text" class="form-control" id="searchBar" placeholder="Keresés...">
+                        <button type="button" class="btn btn-primary ms-2" onclick="searchFunction()">Keresés</button>
+                    </form>
 
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/">Főoldal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about.html">Rólunk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/legal/privacy-policy.html">Adatvédelmi Irányelvek</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Social Media</h2>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.mmtm.hu/" target="_blank">Facebook</a></li>
+                    <li><a href="https://x.com/intent/post?text=Test%20text%0Ahttps://www.mmtm.hu/%0A%23testhashtag1%20%23testhashtag2" target="_blank">X (Twitter)</a></li>
+                    <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mmtm.hu/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://threads.net/intent/post?text=Test%20text%0Ahttps://www.mmtm.hu/%0A%23testhashtag" target="_blank">Threads</a></li>
+                    <li><a href="https://www.reddit.com/submit?url=https://www.mmtm.hu/&title=Test%20text" target="_blank">Reddit</a></li>
+                    <li><a href="http://pinterest.com/pin/create/button/?url=https://www.mmtm.hu/" target="_blank">Pinterest</a></li>
+                    <li><a href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.mmtm.hu/&caption=Test%20text" target="_blank">Tumblr</a></li> 
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Chat & Messaging</h2>
+                <ul class="list-unstyled">
+                    <li><a href="https://api.whatsapp.com/send?text=Test%20text:%20https://www.mmtm.hu/" target="_blank">WhatsApp</a></li>
+                    <li><a href="fb-messenger://share?link=https://www.mmtm.hu/" target="_blank">Facebook Messenger</a></li>
+                    <li><a href="viber://forward?text=https://www.mmtm.hu/" target="_blank">Viber</a></li>
+                    <li><a href="https://t.me/share/url?url=https://www.mmtm.hu/&text=Test%20text" target="_blank">Telegram</a></li>
+                    <li><a href="https://web.skype.com/share?url=https://www.mmtm.hu/" target="_blank">Skype</a></li>
+                    <li><a href="https://slack.com/intl/en-in/share?text=Test%20text:%20https://www.mmtm.hu/" target="_blank">Slack</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Others</h2>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:?subject=Test%20text&body=Test%20text:%20https://www.mmtm.hu/" target="_blank">Email</a></li>
+                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=&su=Test%20text&body=Test%20text:%20https://www.mmtm.hu/" target="_blank">Gmail</a></li>
+                    <li><a href="sms:?body=Test%20text:%20https://www.mmtm.hu/" target="_blank">SMS</a></li>
+                    <li><a href="javascript:void(0)" id="copy-link" onclick="copyToClipboard('https://www.mmtm.hu/', this)">Copy Link</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <h1>Magyar Mémtörténeti Múzeum</h1>
-    <p>Hamarosan...</p>
-        <ul id="memeList">
-                    <li>
-                        <h2>Narancs, Tetves és Dugó</h2>
-                        <p>Narancs, Tetves és Dugó leírás</p>
-                        <a href="./meme/narancs-tetves-es-dugo">Tovább</a>
-                    </li>
-                    <li>
-                        <h2>Polgár Jenő</h2>
-                        <p>Polgár Jenő leírás</p>
-                        <a href="./meme/polgar-jeno">Tovább</a>
-                    </li>
-                    <li>
-                        <h2>Szalacsi Sándor</h2>
-                        <p>Szalacsi Sándor leírás</p>
-                        <a href="./meme/szalacsi-sandor">Tovább</a>
-                    </li>
-        </ul>
-    <h2>TODO</h2>
+    <div class="container my-5">
+        <h1 class="text-center">Magyar Mémtörténeti Múzeum</h1>
+        <p class="text-center">Hamarosan...</p>
+
+        <div class="row" id="memeList">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <h2>Ferike</h2>
+                <p>Ferike meta leírás</p>
+                <a href="/meme/ferike/">Tovább</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <h2>Narancs, Tetves és Dugó</h2>
+                <p>Narancs, Tetves és Dugó meta leírás</p>
+                <a href="/meme/narancs-tetves-es-dugo/">Tovább</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <h2>Polgár Jenő</h2>
+                <p>Polgár Jenő meta leírás</p>
+                <a href="/meme/polgar-jeno/">Tovább</a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <h2>Szalacsi Sándor</h2>
+                <p>Szalacsi Sándor meta leírás</p>
+                <a href="/meme/szalacsi-sandor/">Tovább</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>Email: <a href="mailto:memtortenet@gmail.com" class="text-white">memtortenet@gmail.com</a></p>
+            <p>
+                <a href="/about.html" class="text-white">Rólunk</a> |
+                <a href="/sitemap.html" class="text-white">Oldaltérkép</a> |
+                <a href="/legal/privacy-policy.html" class="text-white">Adatvédelmi Irányelvek</a> |
+                <a href="/legal/terms.html" class="text-white">Felhasználási Feltételek</a>
+            </p>
+            <p>Kövess minket: <a href="https://www.youtube.com/@MemTortenet" class="text-white">Youtube</a></p>
+            <p>© 2024 Magyar Mémtörténeti Múzeum. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <script src="/js/site.js?v=1.0"></script>
+    <script src="/js/bootstrap.bundle.min.js?v=1.0"></script>
+    <script src="/js/main.js?v=1.0"></script>
 </body>
 </html>
