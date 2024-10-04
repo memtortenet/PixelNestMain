@@ -47,6 +47,24 @@
     <link rel="stylesheet" href="/css/brands.min.css?v=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css?v=1.0">
     <link rel="stylesheet" href="/css/site.css?v=1.0">
+    <style>
+        .container.sitemapContainer .list-group .list-group-item {
+            width: max-content;
+            color: #1a0dab;
+            padding: 2px 10px 2px 10px;
+            background-color: inherit;
+        }
+
+            .container.sitemapContainer .list-group .list-group-item.disabled {
+                color: #6c757d;
+                pointer-events: none;
+                opacity: 0.7;
+            }
+
+        .container.sitemapContainer .list-group .list-group {
+            padding-left: 24px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -75,57 +93,53 @@
         </nav>
     </header>
 
-    <div class="container my-2">
+    <div class="container my-2 sitemapContainer">
         <h1 class="text-center">Oldaltérkép</h1>
         <p>Az alábbi lista segítségével tudsz böngészni az összes elérhető oldalon a Magyar Mémtörténeti Múzeumban.</p>
 
-        <ul class="tree">
-            <li><a href="/">Főoldal</a></li>
-            <li><a href="/about.html">Rólunk</a></li>
-            <li><a href="/sitemap.html">Oldaltérkép</a></li>
-            <li><a href="/404.html">404 - Az oldal nem található</a></li>
-            <li>
-                <span>Legal</span>
-                <ul>
-                    <li><a href="/legal/privacy-policy.html">Adatvédelmi Irányelvek</a></li>
-                    <li><a href="/legal/terms.html">Felhasználási Feltételek</a></li>
-                </ul>
-            </li>
-            <li>
-                <span>Mémek</span>
-                <ul>
-                    <li><a href="/meme/ferike/">Ferike</a></li>
-                    <li><a href="/meme/narancs-tetves-es-dugo/">Narancs, Tetves és Dugó</a></li>
-                    <li><a href="/meme/polgar-jeno/">Polgár Jenő</a></li>
-                    <li><a href="/meme/szalacsi-sandor/">Szalacsi Sándor</a></li>
-                </ul>
-            </li>
-        </ul>
+        <div class="list-group">
+            <a href="/" class="list-group-item list-group-item-light border-0">Főoldal</a>
+            <a href="/about.html" class="list-group-item list-group-item-light border-0">Rólunk</a>
+            <a href="/sitemap.html" class="list-group-item list-group-item-light border-0" aria-current="true">Oldaltérkép</a>
+            <a href="/404.html" class="list-group-item list-group-item-light border-0">404 - Az oldal nem található</a>
+            <a class="list-group-item list-group-item-light border-0 disabled">Legal</a>
+            <div class="list-group">
+                <a href="/legal/privacy-policy.html" class="list-group-item list-group-item-light border-0">Adatvédelmi Irányelvek</a>
+                <a href="/legal/terms.html" class="list-group-item list-group-item-light border-0">Felhasználási Feltételek</a>
+            </div>
+            <a class="list-group-item list-group-item-light border-0 disabled">Mémek</a>
+            <div class="list-group">
+                <a href="/meme/ferike/" class="list-group-item list-group-item-light border-0">Ferike</a>
+                <a href="/meme/narancs-tetves-es-dugo/" class="list-group-item list-group-item-light border-0">Narancs, Tetves és Dugó</a>
+                <a href="/meme/polgar-jeno/" class="list-group-item list-group-item-light border-0">Polgár Jenő</a>
+                <a href="/meme/szalacsi-sandor/" class="list-group-item list-group-item-light border-0">Szalacsi Sándor</a>
+            </div>
+        </div>
     </div>
 
     <footer class="text-white py-3">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <a class="fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.mmtm.hu/sitemap.html" target="_blank"></a>
-                    <a class="fa-brands fa-x-twitter" href="https://x.com/intent/post?text=Oldaltérkép - Magyar Mémtörténeti Múzeum%0Ahttps://www.mmtm.hu/sitemap.html%0A%23OldaltérképTestkeyword1%20%23OldaltérképTestkeyword2%20%23OldaltérképTestkeyword3" target="_blank"></a>
-                    <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mmtm.hu/sitemap.html" target="_blank"></a>
-                    <a class="fa-brands fa-threads" href="https://threads.net/intent/post?text=Oldaltérkép - Magyar Mémtörténeti Múzeum%0Ahttps://www.mmtm.hu/sitemap.html%0A%23OldaltérképTestkeyword1%20" target="_blank"></a>
-                    <a class="fa-brands fa-reddit" href="https://www.reddit.com/submit?url=https://www.mmtm.hu/sitemap.html&title=Oldaltérkép - Magyar Mémtörténeti Múzeum" target="_blank"></a> 
-                    <a class="fa-brands fa-pinterest" href="http://pinterest.com/pin/create/button/?url=https://www.mmtm.hu/sitemap.html" target="_blank"></a>
-                    <a class="fa-brands fa-tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.mmtm.hu/sitemap.html" target="_blank"></a>
+                    <a class="shareLink fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.mmtm.hu/sitemap.html" target="_blank"></a>
+                    <a class="shareLink fa-brands fa-x-twitter" href="https://x.com/intent/post?text=Oldaltérkép - Magyar Mémtörténeti Múzeum%0Ahttps://www.mmtm.hu/sitemap.html%0A%23OldaltérképTestkeyword1%20%23OldaltérképTestkeyword2%20%23OldaltérképTestkeyword3" target="_blank"></a>
+                    <a class="shareLink fa-brands fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mmtm.hu/sitemap.html" target="_blank"></a>
+                    <a class="shareLink fa-brands fa-threads" href="https://threads.net/intent/post?text=Oldaltérkép - Magyar Mémtörténeti Múzeum%0Ahttps://www.mmtm.hu/sitemap.html%0A%23OldaltérképTestkeyword1%20" target="_blank"></a>
+                    <a class="shareLink fa-brands fa-reddit" href="https://www.reddit.com/submit?url=https://www.mmtm.hu/sitemap.html&title=Oldaltérkép - Magyar Mémtörténeti Múzeum" target="_blank"></a>
+                    <a class="shareLink fa-brands fa-pinterest" href="http://pinterest.com/pin/create/button/?url=https://www.mmtm.hu/sitemap.html" target="_blank"></a>
+                    <a class="shareLink fa-brands fa-tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.mmtm.hu/sitemap.html" target="_blank"></a>
                 </div>
             </div>
         </div>
         <div class="container text-center">
-            <p>Email: <a href="mailto:memtortenet@gmail.com" class="text-white">memtortenet@gmail.com</a></p>
+            <p>Email: <a href="mailto:memtortenet@gmail.com" class="text-white pageLink">memtortenet@gmail.com</a></p>
             <p>
-                <a href="/about.html" class="text-white">Rólunk</a> |
-                <a href="/sitemap.html" class="text-white">Oldaltérkép</a> |
-                <a href="/legal/privacy-policy.html" class="text-white">Adatvédelmi Irányelvek</a> |
-                <a href="/legal/terms.html" class="text-white">Felhasználási Feltételek</a>
+                <a href="/about.html" class="text-white pageLink">Rólunk</a> |
+                <a href="/sitemap.html" class="text-white pageLink">Oldaltérkép</a> |
+                <a href="/legal/privacy-policy.html" class="text-white pageLink">Adatvédelmi Irányelvek</a> |
+                <a href="/legal/terms.html" class="text-white pageLink">Felhasználási Feltételek</a>
             </p>
-            <p>Kövess minket: <a href="https://www.youtube.com/@MemTortenet" class="text-white" target="_blank">Youtube</a></p>
+            <p>Kövess minket: <a href="https://www.youtube.com/@MemTortenet" class="text-white pageLink" target="_blank">Youtube</a></p>
             <p>© 2024 Magyar Mémtörténeti Múzeum. Minden jog fenntartva.</p>
         </div>
     </footer>
