@@ -59,9 +59,10 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <div class="d-flex me-3">
-                        <input type="text" class="form-control" id="searchBar" placeholder="Keresés..." onkeydown="handleSearchEnterKey(event)">
+                    <div class="d-flex me-3 position-relative">
+                        <input type="text" class="form-control" id="searchBar" placeholder="Keresés..." oninput="showSearchResults()" onkeydown="handleSearchEnterKey(event)">
                         <button type="button" class="btn btn-primary ms-2" onclick="searchFunction()">Keresés</button>
+                        <div id="searchResultsDropdown" class="dropdown-menu w-100"></div>
                     </div>
 
                     <ul class="navbar-nav">
