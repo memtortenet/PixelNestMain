@@ -60,10 +60,10 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <form class="d-flex me-3">
-                        <input type="text" class="form-control" id="searchBar" placeholder="Keresés...">
+                    <div class="d-flex me-3">
+                        <input type="text" class="form-control" id="searchBar" placeholder="Keresés..." onkeydown="handleSearchEnterKey(event)">
                         <button type="button" class="btn btn-primary ms-2" onclick="searchFunction()">Keresés</button>
-                    </form>
+                    </div>
 
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="/">Főoldal</a></li>
@@ -131,8 +131,9 @@
         </div>
     </footer>
 
-    <script src="/js/site.js?v=1.0"></script>
     <script src="/js/bootstrap.bundle.min.js?v=1.0"></script>
+    <script src="/js/fuse.min.js?v=1.0"></script>
+    <script src="/js/site.js?v=1.0"></script>
     <script src="/js/main.js?v=1.0"></script>
 </body>
 </html>
