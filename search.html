@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Polgár Jenő leírás">
-    <meta name="keywords" content="Polgár Jenő testkeyword1, Polgár Jenő testkeyword2, Polgár Jenő testkeyword3">
-    <title>Polgár Jenő</title>
+    <meta name="description" content="Keresési Eredmények.">
+    <meta name="keywords" content="Keresési Eredmények testkeyword1, Keresési Eredmények testkeyword2, Keresési Eredmények testkeyword3">
+    <title>Keresési Eredmények - Magyar Mémtörténeti Múzeum</title>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZRJJ5SWB9"></script>
     <script>
@@ -15,15 +15,15 @@
         gtag('config', 'G-6ZRJJ5SWB9');
     </script>
 
-    <meta property="og:title" content="Polgár Jenő">
-    <meta property="og:description" content="Polgár Jenő leírás">
+    <meta property="og:title" content="Keresési Eredmények - Magyar Mémtörténeti Múzeum">
+    <meta property="og:description" content="Keresési Eredmények.">
     <meta property="og:image" content="https://www.mmtm.hu/img/featured-image-1200x630.webp">
-    <meta property="og:url" content="https://www.mmtm.hu/meme/polgar-jeno/">
+    <meta property="og:url" content="https://www.mmtm.hu/search.html">
     <meta property="og:type" content="website">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Polgár Jenő">
-    <meta name="twitter:description" content="Polgár Jenő leírás">
+    <meta name="twitter:title" content="Keresési Eredmények - Magyar Mémtörténeti Múzeum">
+    <meta name="twitter:description" content="Keresési Eredmények.">
     <meta name="twitter:image" content="https://www.mmtm.hu/img/featured-image-1200x630.webp">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -32,9 +32,9 @@
         {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Polgár Jenő",
-            "description": "Polgár Jenő leírás",
-            "url": "https://www.mmtm.hu/meme/polgar-jeno/"
+            "name": "Keresési Eredmények - Magyar Mémtörténeti Múzeum",
+            "description": "Keresési Eredmények.",
+            "url": "https://www.mmtm.hu/search.html"
             "image": "https://www.mmtm.hu/img/featured-image-1200x630.webp",
             "author": {
                 "@type": "Organization",
@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="/css/solid.min.css?v=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css?v=1.0">
     <link rel="stylesheet" href="/css/site.css?v=1.0">
-    <link rel="stylesheet" href="/css/meme.css?v=1.0">
+    <link rel="stylesheet" href="/css/search.css?v=1.0">
 </head>
 <body>
     <a href="javascript:void(0)" id="top"></a>
@@ -79,37 +79,8 @@
     </header>
 
     <div class="container my-2">
-        <h1 class="text-center">Polgár Jenő</h1>
-        <p>Polgár Jenő leírás</p>
-
-        <h2>Hangfelvételek</h2>
-        <div class="row mb-4">
-            <div class="col-12 col-md-6">
-                <h3 id="polgar-jeno-hang-1">
-                    <a class="header-anchor" href="#polgar-jeno-hang-1" aria-hidden="true">#</a>
-                    Polgár Jenő hang 1
-                </h3>
-                <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Polgár Jenő hang 1', this)">
-                    <div class="video-thumbnail-overlay" style="background-image: url('https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg');"></div>
-                    <div class="video-youtube-play-button"></div>
-                </div>
-                <p>Polgár Jenő hang 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
-        <h2>Videók</h2>
-        <div class="row mb-4">
-            <div class="col-12 col-md-6">
-                <h3 id="polgar-jeno-video-1">
-                    <a class="header-anchor" href="#polgar-jeno-video-1" aria-hidden="true">#</a>
-                    Polgár Jenő videó 1
-                </h3>
-                <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Polgár Jenő videó 1', this)">
-                    <div class="video-thumbnail-overlay" style="background-image: url('https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg');"></div>
-                    <div class="video-youtube-play-button"></div>
-                </div>
-                <p>Polgár Jenő videó 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-        </div>
+        <h1 class="text-center">Keresési Eredmények</h1>
+        <div id="searchResults" class="search-results-container"></div>
     </div>
 
     <footer class="text-white py-3">
@@ -117,13 +88,13 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <span>Megosztás:</span>
-                    <a class="shareLink fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.mmtm.hu/meme/polgar-jeno/" target="_blank" title="Megosztás Facebook-on"></a>
-                    <a class="shareLink fa-brands fa-x-twitter" href="https://x.com/intent/post?text=Polgár Jenő%0Ahttps://www.mmtm.hu/meme/polgar-jeno/%0A%23PolgárJenőTestkeyword1%20%23PolgárJenőTestkeyword2%20%23PolgárJenőTestkeyword3" target="_blank" title="Megosztás X-en/Twitter-en"></a>
-                    <a class="shareLink fa-brands fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mmtm.hu/meme/polgar-jeno/" target="_blank" title="Megosztás LinkedIn-en"></a>
-                    <a class="shareLink fa-brands fa-threads" href="https://threads.net/intent/post?text=Polgár Jenő%0Ahttps://www.mmtm.hu/meme/polgar-jeno/%0A%23PolgárJenőTestkeyword1%20" target="_blank" title="Megosztás Threads-en"></a>
-                    <a class="shareLink fa-brands fa-reddit" href="https://www.reddit.com/submit?url=https://www.mmtm.hu/meme/polgar-jeno/&title=Polgár Jenő" target="_blank" title="Megosztás Reddit-en"></a>
-                    <a class="shareLink fa-brands fa-pinterest" href="http://pinterest.com/pin/create/button/?url=https://www.mmtm.hu/meme/polgar-jeno/" target="_blank" title="Megosztás Pinterest-en"></a>
-                    <a class="shareLink fa-brands fa-tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.mmtm.hu/meme/polgar-jeno/" target="_blank" title="Megosztás Tumblr-en"></a>
+                    <a class="shareLink fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.mmtm.hu/search.html" target="_blank" title="Megosztás Facebook-on"></a>
+                    <a class="shareLink fa-brands fa-x-twitter" href="https://x.com/intent/post?text=Keresési Eredmények - Magyar Mémtörténeti Múzeum%0Ahttps://www.mmtm.hu/search.html%0A%23KeresésiEredményekTestkeyword1%20%23KeresésiEredményekTestkeyword2%20%23KeresésiEredményekTestkeyword3" target="_blank" title="Megosztás X-en/Twitter-en"></a>
+                    <a class="shareLink fa-brands fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mmtm.hu/search.html" target="_blank" title="Megosztás LinkedIn-en"></a>
+                    <a class="shareLink fa-brands fa-threads" href="https://threads.net/intent/post?text=Keresési Eredmények - Magyar Mémtörténeti Múzeum%0Ahttps://www.mmtm.hu/search.html%0A%23KeresésiEredményekTestkeyword1%20" target="_blank" title="Megosztás Threads-en"></a>
+                    <a class="shareLink fa-brands fa-reddit" href="https://www.reddit.com/submit?url=https://www.mmtm.hu/search.html&title=Keresési Eredmények - Magyar Mémtörténeti Múzeum" target="_blank" title="Megosztás Reddit-en"></a>
+                    <a class="shareLink fa-brands fa-pinterest" href="http://pinterest.com/pin/create/button/?url=https://www.mmtm.hu/search.html" target="_blank" title="Megosztás Pinterest-en"></a>
+                    <a class="shareLink fa-brands fa-tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://www.mmtm.hu/search.html" target="_blank" title="Megosztás Tumblr-en"></a>
                 </div>
             </div>
         </div>
@@ -146,6 +117,6 @@
     <script src="/js/fuse.min.js?v=1.0"></script>
     <script src="/js/data.js?v=1.0"></script>
     <script src="/js/site.js?v=1.0"></script>
-    <script src="/js/meme.js?v=1.0"></script>
+    <script src="/js/search.js?v=1.0"></script>
 </body>
 </html>

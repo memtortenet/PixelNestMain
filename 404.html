@@ -49,8 +49,8 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <div class="d-flex me-3 position-relative">
-                        <input id="searchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResults()" onkeydown="handleSearchEnterKey(event)">
-                        <button id="searchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchFunction()">Keresés</button>
+                        <input id="searchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown()" onkeydown="handleSearchEnterKey(event)">
+                        <button id="searchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit()">Keresés</button>
                         <div id="searchResultsDropdown" class="dropdown-menu"></div>
                     </div>
 
@@ -104,6 +104,7 @@
 
     <script src="/js/bootstrap.bundle.min.js?v=1.0"></script>
     <script src="/js/fuse.min.js?v=1.0"></script>
+    <script src="/js/data.js?v=1.0"></script>
     <script src="/js/site.js?v=1.0"></script>
 </body>
 </html>
