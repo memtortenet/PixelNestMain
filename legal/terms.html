@@ -53,25 +53,36 @@
     <a href="javascript:void(0)" id="top"></a>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="/">Magyar Mémtörténeti Múzeum</a>
+            <div class="container navbar-container">
+                <a class="navbar-logo" href="/"><img src="/img/logo.webp" alt="Logo"></a>
+                <a class="navbar-brand navbar-title" href="/">Magyar Mémtörténeti Múzeum</a>
+
+                <a href="javascript:void(0);" class="fa-solid fa-search navbar-search-icon" onclick="toggleMobileSearchContainer()"></a>
+
+                <div id="searchContainer" class="position-relative">
+                    <input id="searchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(false)">
+                    <button id="searchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit(false)">Keresés</button>
+                    <div id="searchResultsDropdown" class="dropdown-menu"></div>
+                </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <div class="d-flex me-3 position-relative">
-                        <input id="searchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown()">
-                        <button id="searchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit()">Keresés</button>
-                        <div id="searchResultsDropdown" class="dropdown-menu"></div>
-                    </div>
-
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link share-link fa-brands fa-youtube" href="https://www.youtube.com/@MemTortenet" target="_blank" title="Kövess minket YouTube-on"></a></li>
                         <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="randomMeme()">Random</a></li>
                         <li class="nav-item"><a class="nav-link" href="/">Főoldal</a></li>
                     </ul>
+                </div>
+            </div>
+
+            <div id="mobileSearchContainerOuter" class="container navbar-container">
+                <div id="mobileSearchContainer" class="container position-relative">
+                    <input id="mobileSearchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(true)">
+                    <button id="mobileSearchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit(true)">Keresés</button>
+                    <div id="mobileSearchResultsDropdown" class="dropdown-menu"></div>
                 </div>
             </div>
         </nav>
