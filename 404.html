@@ -3,25 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ez az oldal nem létezik. Lépj vissza a főoldalra.">
+    <meta name="description" content="Ez az oldal nem létezik.">
     <title>404 - Az oldal nem található</title>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZRJJ5SWB9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-6ZRJJ5SWB9');
-    </script>
-
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "404 - Az oldal nem található",
-            "description": "Ez az oldal nem létezik. Lépj vissza a főoldalra.",
+            "description": "Ez az oldal nem létezik.",
             "url": "https://www.mmtm.hu/404.html",
             "image": "https://www.mmtm.hu/img/featured-image-1200x630.webp",
             "author": {
@@ -31,8 +21,19 @@
         }
     </script>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZRJJ5SWB9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6ZRJJ5SWB9');
+    </script>
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="/css/fontawesome.min.css?v=1.0">
     <link rel="stylesheet" href="/css/brands.min.css?v=1.0">
+    <link rel="stylesheet" href="/css/solid.min.css?v=1.0">
     <link rel="stylesheet" href="/css/bootstrap.min.css?v=1.0">
     <link rel="stylesheet" href="/css/site.css?v=1.0">
 </head>
@@ -49,7 +50,7 @@
                 <div id="searchContainer" class="position-relative">
                     <input id="searchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(false)">
                     <button id="searchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit(false)">Keresés</button>
-                    <div id="searchResultsDropdown" class="dropdown-menu"></div>
+                    <div id="searchResultsDropdown"></div>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +70,7 @@
                 <div id="mobileSearchContainer" class="container position-relative">
                     <input id="mobileSearchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(true)">
                     <button id="mobileSearchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit(true)">Keresés</button>
-                    <div id="mobileSearchResultsDropdown" class="dropdown-menu"></div>
+                    <div id="mobileSearchResultsDropdown"></div>
                 </div>
             </div>
         </nav>

@@ -7,14 +7,6 @@
     <meta name="keywords" content="Ferike testkeyword1, Ferike testkeyword2, Ferike testkeyword3">
     <title>Ferike</title>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZRJJ5SWB9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-6ZRJJ5SWB9');
-    </script>
-
     <meta property="og:title" content="Ferike">
     <meta property="og:description" content="Ferike leírás">
     <meta property="og:image" content="https://www.mmtm.hu/img/featured-image-1200x630.webp">
@@ -25,8 +17,6 @@
     <meta name="twitter:title" content="Ferike">
     <meta name="twitter:description" content="Ferike leírás">
     <meta name="twitter:image" content="https://www.mmtm.hu/img/featured-image-1200x630.webp">
-
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <script type="application/ld+json">
         {
@@ -42,6 +32,16 @@
             }
         }
     </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZRJJ5SWB9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6ZRJJ5SWB9');
+    </script>
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/fontawesome.min.css?v=1.0">
     <link rel="stylesheet" href="/css/brands.min.css?v=1.0">
@@ -64,7 +64,7 @@
                 <div id="searchContainer" class="position-relative">
                     <input id="searchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(false)">
                     <button id="searchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit(false)">Keresés</button>
-                    <div id="searchResultsDropdown" class="dropdown-menu"></div>
+                    <div id="searchResultsDropdown"></div>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +84,7 @@
                 <div id="mobileSearchContainer" class="container position-relative">
                     <input id="mobileSearchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(true)">
                     <button id="mobileSearchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit(true)">Keresés</button>
-                    <div id="mobileSearchResultsDropdown" class="dropdown-menu"></div>
+                    <div id="mobileSearchResultsDropdown"></div>
                 </div>
             </div>
         </nav>
@@ -98,7 +98,7 @@
         <div class="row mb-4">
             <div class="col-12 col-md-6">
                 <h3 id="ferike-hang-1">
-                    <a class="header-anchor" href="#ferike-hang-1" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-hang-1">#</a>
                     Ferike hang 1
                 </h3>
                 <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Ferike hang 1', this)">
@@ -109,7 +109,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3 id="ferike-hang-2">
-                    <a class="header-anchor" href="#ferike-hang-2" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-hang-2">#</a>
                     Ferike hang 2
                 </h3>
                 <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Ferike hang 2', this)">
@@ -120,7 +120,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3 id="ferike-hang-3">
-                    <a class="header-anchor" href="#ferike-hang-3" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-hang-3">#</a>
                     Ferike hang 3
                 </h3>
                 <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Ferike hang 3', this)">
@@ -134,7 +134,7 @@
         <div class="row mb-4">
             <div class="col-12 col-md-6">
                 <h3 id="ferike-kep-1">
-                    <a class="header-anchor" href="#ferike-kep-1" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-kep-1">#</a>
                     Ferike kép 1
                 </h3>
                 <div class="image-container">
@@ -144,7 +144,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3 id="ferike-kep-2">
-                    <a class="header-anchor" href="#ferike-kep-2" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-kep-2">#</a>
                     Ferike kép 2
                 </h3>
                 <div class="image-container">
@@ -154,7 +154,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3 id="ferike-kep-3">
-                    <a class="header-anchor" href="#ferike-kep-3" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-kep-3">#</a>
                     Ferike kép 3
                 </h3>
                 <div class="image-container">
@@ -164,7 +164,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3 id="ferike-kep-4">
-                    <a class="header-anchor" href="#ferike-kep-4" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-kep-4">#</a>
                     Ferike kép 4
                 </h3>
                 <div class="image-container">
@@ -177,7 +177,7 @@
         <div class="row mb-4">
             <div class="col-12 col-md-6">
                 <h3 id="ferike-video-1">
-                    <a class="header-anchor" href="#ferike-video-1" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-video-1">#</a>
                     Ferike videó 1
                 </h3>
                 <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Ferike videó 1', this)">
@@ -188,7 +188,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3 id="ferike-video-2">
-                    <a class="header-anchor" href="#ferike-video-2" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-video-2">#</a>
                     Ferike videó 2
                 </h3>
                 <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Ferike videó 2', this)">
@@ -199,7 +199,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3 id="ferike-video-3">
-                    <a class="header-anchor" href="#ferike-video-3" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-video-3">#</a>
                     Ferike videó 3
                 </h3>
                 <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Ferike videó 3', this)">
@@ -210,7 +210,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3 id="ferike-video-4">
-                    <a class="header-anchor" href="#ferike-video-4" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-video-4">#</a>
                     Ferike videó 4
                 </h3>
                 <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Ferike videó 4', this)">
@@ -221,7 +221,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <h3 id="ferike-video-5">
-                    <a class="header-anchor" href="#ferike-video-5" aria-hidden="true">#</a>
+                    <a class="header-anchor" href="#ferike-video-5">#</a>
                     Ferike videó 5
                 </h3>
                 <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Ferike videó 5', this)">

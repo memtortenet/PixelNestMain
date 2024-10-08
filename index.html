@@ -7,14 +7,6 @@
     <meta name="keywords" content="Testkeyword1, Testkeyword2, Testkeyword3">
     <title>Magyar Mémtörténeti Múzeum</title>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZRJJ5SWB9"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-6ZRJJ5SWB9');
-    </script>
-
     <meta property="og:title" content="Magyar Mémtörténeti Múzeum">
     <meta property="og:description" content="Magyar Mémtörténeti Múzeum leírás">
     <meta property="og:image" content="https://www.mmtm.hu/img/featured-image-1200x630.webp">
@@ -25,8 +17,6 @@
     <meta name="twitter:title" content="Magyar Mémtörténeti Múzeum">
     <meta name="twitter:description" content="Magyar Mémtörténeti Múzeum leírás">
     <meta name="twitter:image" content="https://www.mmtm.hu/img/featured-image-1200x630.webp">
-
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <script type="application/ld+json">
         {
@@ -42,6 +32,16 @@
             }
         }
     </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZRJJ5SWB9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6ZRJJ5SWB9');
+    </script>
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/fontawesome.min.css?v=1.0">
     <link rel="stylesheet" href="/css/brands.min.css?v=1.0">
@@ -63,7 +63,7 @@
                 <div id="searchContainer" class="position-relative">
                     <input id="searchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(false)">
                     <button id="searchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit(false)">Keresés</button>
-                    <div id="searchResultsDropdown" class="dropdown-menu"></div>
+                    <div id="searchResultsDropdown"></div>
                 </div>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +83,7 @@
                 <div id="mobileSearchContainer" class="container position-relative">
                     <input id="mobileSearchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(true)">
                     <button id="mobileSearchBarButton" type="button" class="btn btn-primary ms-2" onclick="searchSubmit(true)">Keresés</button>
-                    <div id="mobileSearchResultsDropdown" class="dropdown-menu"></div>
+                    <div id="mobileSearchResultsDropdown"></div>
                 </div>
             </div>
         </nav>
