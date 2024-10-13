@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Narancs, Tetves és Dugó leírás">
-    <meta name="keywords" content="Narancs, Tetves és Dugó testkeyword1, Narancs, Tetves és Dugó testkeyword2, Narancs, Tetves és Dugó testkeyword3">
+    <meta name="keywords" content="Narancs Tetves és Dugó testkeyword1, Narancs Tetves és Dugó testkeyword2, Narancs Tetves és Dugó testkeyword3">
     <title>Narancs, Tetves és Dugó</title>
 
     <meta property="og:title" content="Narancs, Tetves és Dugó">
@@ -55,10 +55,10 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container navbar-container">
-                <a class="navbar-logo" href="/"><img src="/img/logo.webp" alt="Logo"></a>
+                <a class="navbar-logo" href="/"><img src="/img/logo.webp" alt="logo"></a>
                 <a class="navbar-brand navbar-title" href="/">Magyar Mémtörténeti Múzeum</a>
 
-                <a href="javascript:void(0);" class="fa-solid fa-search navbar-search-icon" onclick="toggleMobileSearchContainer()"></a>
+                <a href="javascript:void(0)" class="fa-solid fa-search navbar-search-icon" onclick="toggleMobileSearchContainer()"></a>
 
                 <div id="searchContainer" class="position-relative">
                     <input id="searchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(false)">
@@ -73,7 +73,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link share-link fa-brands fa-youtube" href="https://www.youtube.com/@MemTortenet" target="_blank" title="Kövess minket YouTube-on"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="randomMeme()">Random</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="randomMeme()">Random</a></li>
                         <li class="nav-item"><a class="nav-link" href="/">Főoldal</a></li>
                     </ul>
                 </div>
@@ -91,31 +91,47 @@
 
     <div class="container my-2">
         <h1 class="text-center">Narancs, Tetves és Dugó</h1>
-        <p>Narancs, Tetves és Dugó leírás</p>
-
-        <h2>Videók</h2>
-        <div class="row mb-4">
-            <div class="col-12 col-md-6">
-                <h3 id="narancs-tetves-es-dugo-video-1">
-                    <a class="header-anchor" href="#narancs-tetves-es-dugo-video-1">#</a>
-                    Narancs, Tetves és Dugó videó 1
-                </h3>
-                <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Narancs, Tetves és Dugó videó 1', this)">
-                    <div class="video-thumbnail-overlay" style="background-image: url('https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg');"></div>
-                    <div class="video-youtube-play-button"></div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div id="sidebar">
+                    <div id="dailyMemeContainer" class="sidebar-section">
+                        <h2 class="sidebar-title">Nap Mémje</h2>
+                        <div id="dailyMeme"></div>
+                    </div>
+                    <div id="tagCloudContainer" class="sidebar-section">
+                        <h2 class="sidebar-title">Címkefelhő</h2>
+                        <div id="tagCloud"></div>
+                    </div>
                 </div>
-                <p>Narancs, Tetves és Dugó videó 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-            <div class="col-12 col-md-6">
-                <h3 id="narancs-tetves-es-dugo-video-3">
-                    <a class="header-anchor" href="#narancs-tetves-es-dugo-video-3">#</a>
-                    Narancs, Tetves és Dugó videó 3
-                </h3>
-                <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Narancs, Tetves és Dugó videó 3', this)">
-                    <div class="video-thumbnail-overlay" style="background-image: url('https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg');"></div>
-                    <div class="video-youtube-play-button"></div>
+            <div class="col-lg-9 col-md-8">
+                <p>Narancs, Tetves és Dugó leírás</p>
+
+                <h2>Videók</h2>
+                <div class="row mb-4">
+                    <div class="col-12 col-lg-6">
+                        <h3 id="narancs-tetves-es-dugo-video-1">
+                            <a class="header-anchor" href="#narancs-tetves-es-dugo-video-1">#</a>
+                            Narancs, Tetves és Dugó videó 1
+                        </h3>
+                        <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Narancs, Tetves és Dugó videó 1', this)">
+                            <div class="video-thumbnail-overlay" style="background-image: url('https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg');"></div>
+                            <div class="video-youtube-play-button"></div>
+                        </div>
+                        <p>Narancs, Tetves és Dugó videó 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <h3 id="narancs-tetves-es-dugo-video-3">
+                            <a class="header-anchor" href="#narancs-tetves-es-dugo-video-3">#</a>
+                            Narancs, Tetves és Dugó videó 3
+                        </h3>
+                        <div class="video-container" onclick="loadVideo('https://www.youtube-nocookie.com/embed/xKiRGBtkLP8', 'Narancs, Tetves és Dugó videó 3', this)">
+                            <div class="video-thumbnail-overlay" style="background-image: url('https://img.youtube.com/vi/xKiRGBtkLP8/hqdefault.jpg');"></div>
+                            <div class="video-youtube-play-button"></div>
+                        </div>
+                        <p>Narancs, Tetves és Dugó videó 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </div>
-                <p>Narancs, Tetves és Dugó videó 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
     </div>
@@ -124,7 +140,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-auto col-12 text-center">
-                    <a class="share-link fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Facebook-on"></a>
+                <a class="share-link fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Facebook-on"></a>
                     <a class="share-link fa-brands fa-x-twitter" href="https://x.com/intent/post?text=Magyar%20Mémtörténeti%20Múzeum%0ANarancs, Tetves és Dugó%0Ahttps://www.mmtm.hu/meme/narancs-tetves-es-dugo/%0A%23Narancs,TetvesÉsDugóTestkeyword1%20%23Narancs,TetvesÉsDugóTestkeyword2%20%23Narancs,TetvesÉsDugóTestkeyword3" target="_blank" title="Megosztás X-en/Twitter-en"></a>
                     <a class="share-link fa-brands fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás LinkedIn-en"></a>
                     <a class="share-link fa-brands fa-threads" href="https://threads.net/intent/post?text=Magyar%20Mémtörténeti%20Múzeum%0ANarancs, Tetves és Dugó%0Ahttps://www.mmtm.hu/meme/narancs-tetves-es-dugo/%0A%23Narancs,TetvesÉsDugóTestkeyword1%20" target="_blank" title="Megosztás Threads-en"></a>
@@ -134,20 +150,20 @@
                 </div>
 
                 <div class="col-md-auto col-12 text-center d-none">
-                    <a class="share-link fa-brands fa-facebook-messenger" href="javascript:void(0)" target="_blank" title="Megosztás Facebook Messenger-en"></a>
-                    <a class="share-link fa-brands fa-whatsapp" href="javascript:void(0)" target="_blank" title="Megosztás WhatsApp-on"></a>
-                    <a class="share-link fa-brands fa-viber" href="javascript:void(0)" target="_blank" title="Megosztás Viber-en"></a>
-                    <a class="share-link fa-brands fa-telegram" href="javascript:void(0)" target="_blank" title="Megosztás Telegram-on"></a>
-                    <a class="share-link fa-brands fa-skype" href="javascript:void(0)" target="_blank" title="Megosztás Skype-on"></a>
-                    <a class="share-link fa-brands fa-slack" href="javascript:void(0)" target="_blank" title="Megosztás Slack-en"></a>
-                    <a class="share-link share-link-icon share-link-icon-teams" href="javascript:void(0)" target="_blank" title="Megosztás Teams-en">
+                    <a id="facebookMessengerLink" class="share-link fa-brands fa-facebook-messenger" href="javascript:void(0)" data-desktop="https://www.messenger.com/t/?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="fb-messenger://share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Facebook Messenger-en"></a>
+                    <a id="whatsappLink" class="share-link fa-brands fa-whatsapp" href="javascript:void(0)" data-desktop="https://web.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="https://api.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás WhatsApp-on"></a>
+                    <a id="viberLink" class="share-link fa-brands fa-viber" href="javascript:void(0)" data-desktop="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Viber-en"></a>
+                    <a id="telegramLink" class="share-link fa-brands fa-telegram" href="javascript:void(0)" data-desktop="https://web.telegram.org/?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="tg://msg_url?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Telegram-on"></a>
+                    <a id="skypeLink" class="share-link fa-brands fa-skype" href="javascript:void(0)" data-desktop="https://web.skype.com/share?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="skype:?chat&url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Skype-on"></a>
+                    <a id="slackLink" class="share-link fa-brands fa-slack" href="javascript:void(0)" data-desktop="https://slack.com/intl/en-in/share?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="slack://open?team=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Slack-en"></a>
+                    <a id="teamsLink" class="share-link share-link-icon share-link-icon-teams" href="javascript:void(0)" data-desktop="https://teams.microsoft.com/share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="msteams://share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Teams-en">
                         <img src="/img/icon-teams.svg">
                     </a>
                 </div>
 
                 <div class="col-md-auto col-12 text-center">
                     <a class="share-link fa-solid fa-envelope" href="mailto:?subject=Narancs, Tetves és Dugó%20-%20Magyar%20Mémtörténeti%20Múzeum&body=Magyar%20Mémtörténeti%20Múzeum%0ANarancs, Tetves és Dugó%0Ahttps://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Email-en"></a>
-                    <a class="share-link share-link-icon share-link-icon-gmail" href="https://mail.google.com/mail/?view=cm&fs=1&to=&su=Narancs, Tetves és Dugó%20-%20Magyar%20Mémtörténeti%20Múzeum&body=Magyar%20Mémtörténeti%20Múzeum%0ANarancs, Tetves és Dugó%0Ahttps://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Gmail-en">
+                    <a id="gmailLink" class="share-link share-link-icon share-link-icon-gmail" href="javascript:void(0)" data-desktop="https://mail.google.com/mail/?view=cm&fs=1&to=&su=Narancs, Tetves és Dugó%20-%20Magyar%20Mémtörténeti%20Múzeum&body=Magyar%20Mémtörténeti%20Múzeum%0ANarancs, Tetves és Dugó%0Ahttps://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="mailto:?subject=Narancs, Tetves és Dugó%20-%20Magyar%20Mémtörténeti%20Múzeum&body=Magyar%20Mémtörténeti%20Múzeum%0ANarancs, Tetves és Dugó%0Ahttps://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Gmail-en">
                         <img src="/img/icon-gmail.svg">
                     </a>
                     <a class="share-link fa-solid fa-comment-sms" href="sms:?body=Magyar%20Mémtörténeti%20Múzeum%0ANarancs, Tetves és Dugó%0Ahttps://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" title="Megosztás Sms-ben"></a>
