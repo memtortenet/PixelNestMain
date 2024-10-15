@@ -37,8 +37,23 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-6ZRJJ5SWB9');
+        function initGoogleAnalytics(anonymize) {
+            gtag('js', new Date());
+            if (anonymize) {
+                gtag('config', 'G-6ZRJJ5SWB9', { 'anonymize_ip': true });
+            } else {
+                gtag('config', 'G-6ZRJJ5SWB9');
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var consentStatus = localStorage.getItem("cookiesConsent");
+            if (consentStatus === "accepted") {
+                initGoogleAnalytics(false);
+            } else {
+                initGoogleAnalytics(true);
+            }
+        });
     </script>
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -190,7 +205,8 @@
                 <span class="text-nowrap"><a href="/about.html" class="text-white footer-page-link">Rólunk</a> |</span>
                 <span class="text-nowrap"><a href="/legal/privacy-policy.html" class="text-white footer-page-link">Adatvédelmi Irányelvek</a> |</span>
                 <span class="text-nowrap"><a href="/legal/terms.html" class="text-white footer-page-link">Felhasználási Feltételek</a> |</span>
-                <span class="text-nowrap"><a href="/sitemap.html" class="text-white footer-page-link">Oldaltérkép</a></span>
+                <span class="text-nowrap"><a href="/sitemap.html" class="text-white footer-page-link">Oldaltérkép</a> |</span>
+                <span class="text-nowrap"><a href="javascript:void(0)" id="cookieSettingsLink" class="text-white footer-page-link">Süti/Cookie Beállítások</a></span>
             </p>
             <p>
                 <span class="text-nowrap">© 2024 Magyar Mémtörténeti Múzeum.</span>
@@ -200,6 +216,14 @@
     </footer>
 
     <a href="#top" id="backToTop" class="back-to-top fa-solid fa-arrow-up" title="Vissza az oldal tetejére"></a>
+
+    <div id="cookieBanner" class="fixed-bottom bg-dark text-white py-3 px-4 text-center">
+        <p class="mb-0 d-inline">Ez a weboldal nem gyűjt személyes adatokat. Azonban harmadik fél általi szolgáltatásokat (YouTube, Google Analytics) használ, amelyek sütiket/cookie-kat használhatnak. <span class="text-nowrap"><a href="/legal/privacy-policy.html" class="text-info">További információk</a></span></p>
+        <div class="mt-2">
+            <button id="acceptCookies" class="btn btn-success ms-3">Elfogadom</button>
+            <button id="declineCookies" class="btn btn-danger ms-2">Elutasítom</button>
+        </div>
+    </div>
 
     <script src="/js/bootstrap.bundle.min.js?v=1.0"></script>
     <script src="/js/fuse.min.js?v=1.0"></script>

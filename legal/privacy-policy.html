@@ -37,8 +37,23 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-6ZRJJ5SWB9');
+        function initGoogleAnalytics(anonymize) {
+            gtag('js', new Date());
+            if (anonymize) {
+                gtag('config', 'G-6ZRJJ5SWB9', { 'anonymize_ip': true });
+            } else {
+                gtag('config', 'G-6ZRJJ5SWB9');
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var consentStatus = localStorage.getItem("cookiesConsent");
+            if (consentStatus === "accepted") {
+                initGoogleAnalytics(false);
+            } else {
+                initGoogleAnalytics(true);
+            }
+        });
     </script>
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -141,21 +156,23 @@
                 </div>
             </div>
             <div class="col-lg-9 col-md-8">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor nec leo id vulputate. Etiam tempus mi maximus, feugiat felis in, mollis nisi. Vivamus pellentesque est justo, ac ullamcorper massa gravida at. In vel porttitor est. Vestibulum laoreet tempus ligula, ac porta dolor bibendum quis. Vivamus nisl nunc, cursus id pulvinar et, condimentum in elit. Nunc non ex placerat, ultrices ligula ut, porttitor lectus. Ut bibendum nisi feugiat risus hendrerit placerat. Donec vel faucibus tellus. Quisque sollicitudin luctus purus ac egestas. Praesent ac massa nulla. Fusce nec velit eget odio fermentum consectetur. Aenean vitae interdum enim, eu efficitur tellus. Etiam vulputate est in eleifend porta.
-                </p>
-                <p>
-                    Maecenas vehicula rutrum dolor vitae ullamcorper. Morbi tempus sem sit amet felis ultricies rhoncus. Cras ipsum augue, malesuada ac sem nec, tristique ultricies arcu. Praesent viverra facilisis aliquet. Maecenas ut risus viverra, ultrices est id, tempor est. Phasellus faucibus velit a nulla consequat, et volutpat lectus hendrerit. Praesent est arcu, dapibus at placerat ac, scelerisque vel est. Duis urna mauris, tincidunt faucibus turpis pellentesque, aliquam euismod est. In interdum erat vitae mi consequat, non congue turpis sagittis. Pellentesque in interdum nibh. Aliquam erat volutpat. Morbi congue libero malesuada felis faucibus tincidunt. Aenean eget hendrerit lorem. Nunc consectetur id lorem sit amet dapibus.
-                </p>
-                <p>
-                    Quisque in velit eget neque hendrerit malesuada id efficitur magna. Quisque lectus neque, dignissim vel diam vel, tristique bibendum nisl. Pellentesque eros nibh, fermentum non metus cursus, dignissim gravida massa. Pellentesque ullamcorper iaculis mi. Curabitur porta libero et volutpat congue. Etiam non gravida nulla. Nam sagittis euismod egestas. Nunc vehicula accumsan purus quis imperdiet. Etiam tincidunt ac sem vitae hendrerit. Cras sed sagittis mi, eu placerat leo.
-                </p>
-                <p>
-                    Morbi eget risus nisi. Aenean id turpis massa. Sed viverra orci tempus egestas rutrum. Maecenas dapibus, quam ac dictum sodales, est dui cursus leo, vel vehicula nisl augue ac enim. Vivamus et ultricies dui. Phasellus nec sapien sed nisl tincidunt eleifend. Vestibulum sagittis condimentum lorem sed egestas. Nulla ut facilisis est.
-                </p>
-                <p>
-                    Aenean et ex pulvinar, luctus orci sollicitudin, tempor enim. Donec hendrerit aliquet ligula non rhoncus. Sed ornare arcu et efficitur efficitur. Aliquam maximus diam at diam pellentesque, ac egestas sem hendrerit. Fusce vitae mauris diam. Vivamus tempus tellus a tellus feugiat aliquet. Suspendisse eget consectetur risus. Curabitur a malesuada mauris. Donec fringilla eros in varius cursus.
-                </p>
+                <p>Ez a weboldal nem gyűjt személyes adatokat. Azonban harmadik fél általi szolgáltatásokat (YouTube, Google Analytics) használ, amelyek sütiket/cookie-kat használhatnak.</p>
+
+                <h3>YouTube Beágyazások</h3>
+                <p>YouTube videókat ágyazunk be a "youtube-nocookie.com" domain segítségével a nyomkövetés minimalizálása érdekében, de a Google még gyűjthet adatokat, például megtekintési előzményeket.</p>
+
+                <h3>Google Analytics</h3>
+                <p>A Google Analytics segítségével nyomon követjük a weboldal forgalmát és a használati statisztikákat. A Google Analytics adatokat gyűjthet, például böngészési mintákat. Ha elfogadja a sütiket/cookie-kat, a Google Analytics részletesebb adatokat gyűjthet elemzés céljából.</p>
+
+                <h3>Az Ön Jogai</h3>
+                <p>További részletekért, illetve ha az Európai Unióban (EU) tartózkodik, és szeretne hozzáférést, helyesbítést vagy törlést kérni ezen harmadik fél által gyűjtött adatokkal kapcsolatban, kérjük, tekintse meg a harmadik fél adatvédelmi irányelveit:</p>
+
+                <div class="custom-link-list">
+                    <div class="list-group">
+                        <a href="https://www.youtube.com/t/terms" class="list-group-item list-group-item-light border-0">YouTube Szolgáltatási Feltételek</a>
+                        <a href="https://policies.google.com/privacy" class="list-group-item list-group-item-light border-0">Google Adatvédelmi Irányelvek</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -202,7 +219,8 @@
                 <span class="text-nowrap"><a href="/about.html" class="text-white footer-page-link">Rólunk</a> |</span>
                 <span class="text-nowrap"><a href="/legal/privacy-policy.html" class="text-white footer-page-link">Adatvédelmi Irányelvek</a> |</span>
                 <span class="text-nowrap"><a href="/legal/terms.html" class="text-white footer-page-link">Felhasználási Feltételek</a> |</span>
-                <span class="text-nowrap"><a href="/sitemap.html" class="text-white footer-page-link">Oldaltérkép</a></span>
+                <span class="text-nowrap"><a href="/sitemap.html" class="text-white footer-page-link">Oldaltérkép</a> |</span>
+                <span class="text-nowrap"><a href="javascript:void(0)" id="cookieSettingsLink" class="text-white footer-page-link">Süti/Cookie Beállítások</a></span>
             </p>
             <p>
                 <span class="text-nowrap">© 2024 Magyar Mémtörténeti Múzeum.</span>
@@ -212,6 +230,14 @@
     </footer>
 
     <a href="#top" id="backToTop" class="back-to-top fa-solid fa-arrow-up" title="Vissza az oldal tetejére"></a>
+
+    <div id="cookieBanner" class="fixed-bottom bg-dark text-white py-3 px-4 text-center">
+        <p class="mb-0 d-inline">Ez a weboldal nem gyűjt személyes adatokat. Azonban harmadik fél általi szolgáltatásokat (YouTube, Google Analytics) használ, amelyek sütiket/cookie-kat használhatnak. <span class="text-nowrap"><a href="/legal/privacy-policy.html" class="text-info">További információk</a></span></p>
+        <div class="mt-2">
+            <button id="acceptCookies" class="btn btn-success ms-3">Elfogadom</button>
+            <button id="declineCookies" class="btn btn-danger ms-2">Elutasítom</button>
+        </div>
+    </div>
 
     <script src="/js/bootstrap.bundle.min.js?v=1.0"></script>
     <script src="/js/fuse.min.js?v=1.0"></script>
