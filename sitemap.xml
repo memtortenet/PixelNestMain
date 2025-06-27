@@ -16,6 +16,30 @@
         <priority>0.5</priority>
     </url>
 
+    <!-- Sitemap Page -->
+    <url>
+        <loc>https://www.mmtm.hu/sitemap.html</loc>
+        <lastmod>2025-06-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Search Page -->
+    <url>
+        <loc>https://www.mmtm.hu/search.html</loc>
+        <lastmod>2025-06-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- 404 Page -->
+    <url>
+        <loc>https://www.mmtm.hu/404.html</loc>
+        <lastmod>2025-06-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.1</priority>
+    </url>
+
     <!-- Legal Pages -->
     <url>
         <loc>https://www.mmtm.hu/legal/privacy-policy.html</loc>
@@ -28,14 +52,6 @@
         <lastmod>2025-06-27</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.5</priority>
-    </url>
-
-    <!-- 404 Page -->
-    <url>
-        <loc>https://www.mmtm.hu/404.html</loc>
-        <lastmod>2025-06-27</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.1</priority>
     </url>
 
     <!-- Meme Pages -->

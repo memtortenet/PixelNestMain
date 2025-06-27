@@ -1,6 +1,4 @@
 ﻿User-agent: *
-Disallow: /css/
-Disallow: /js/
 Disallow: /404.html
 Disallow: /legal/
 Disallow: *query=*
