@@ -69,14 +69,14 @@
     <link rel="stylesheet" href="/css/meme.css?v=1.0">
 </head>
 <body>
-    <a href="javascript:void(0)" id="top"></a>
+    <a href="javascript:void(0)" id="top" title="Az oldal teteje"><span class="visually-hidden">Az oldal teteje</span></a>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container navbar-container">
-                <a class="navbar-logo" href="/"><img src="/img/logo.webp" alt="logo" width="76" height="40"></a>
+                <a class="navbar-logo" href="/"><img src="/img/logo.webp" alt="logo" width="76" height="40"><span class="visually-hidden">Logó</span></a>
                 <a class="navbar-brand navbar-title" href="/">Magyar Mémtörténeti Múzeum</a>
 
-                <a href="javascript:void(0)" class="fa-solid fa-search navbar-search-icon" onclick="toggleMobileSearchContainer()"></a>
+                <a href="javascript:void(0)" class="fa-solid fa-search navbar-search-icon" onclick="toggleMobileSearchContainer()"><span class="visually-hidden">Keresés</span></a>
 
                 <div id="searchContainer" class="position-relative">
                     <input id="searchBar" type="text" class="form-control" placeholder="Keresés..." oninput="showSearchResultsDropdown(false)">
@@ -90,7 +90,7 @@
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link share-link fa-brands fa-youtube" href="https://www.youtube.com/@MemTortenet" target="_blank" rel="noopener" title="Kövess minket YouTube-on"></a></li>
+                        <li class="nav-item"><a class="nav-link share-link fa-brands fa-youtube" href="https://www.youtube.com/@MemTortenet" target="_blank" rel="noopener" title="Kövess minket YouTube-on"><span class="visually-hidden">Kövess minket YouTube-on</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="javascript:void(0)" onclick="randomMeme()">Random</a></li>
                         <li class="nav-item"><a class="nav-link" href="/">Főoldal</a></li>
                         <li class="nav-item nav-bar-share-link-container" style="flex-direction: column;">
@@ -98,34 +98,33 @@
                             <div class="mt-2">
         <div class="row share-link-main-container">
             <div class="col-md-auto col-12 share-link-container">
-                <a class="share-link fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Facebook-on"></a>
-                <a class="share-link fa-brands fa-x-twitter" href="https://x.com/intent/post?text=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F%0D%0A%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword1%20%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword2%20%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword3" target="_blank" rel="noopener" title="Megosztás X-en/Twitter-en"></a>
-                <a class="share-link fa-brands fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás LinkedIn-en"></a>
-                <a class="share-link fa-brands fa-threads" href="https://threads.net/intent/post?text=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F%0D%0A%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword1%20" target="_blank" rel="noopener" title="Megosztás Threads-en"></a>
-                <a class="share-link fa-brands fa-reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F&title=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum" target="_blank" rel="noopener" title="Megosztás Reddit-en"></a>
-                <a class="share-link fa-brands fa-pinterest" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Pinterest-en"></a>
-                <a class="share-link fa-brands fa-tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Tumblr-en"></a>
+                <a class="share-link fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Facebook-on"><span class="visually-hidden">Megosztás Facebook-on</span></a>
+                <a class="share-link fa-brands fa-x-twitter" href="https://x.com/intent/post?text=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F%0D%0A%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword1%20%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword2%20%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword3" target="_blank" rel="noopener" title="Megosztás X-en/Twitter-en"><span class="visually-hidden">Megosztás X-en/Twitter-en</span></a>
+                <a class="share-link fa-brands fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás LinkedIn-en"><span class="visually-hidden">Megosztás LinkedIn-en</span></a>
+                <a class="share-link fa-brands fa-threads" href="https://threads.net/intent/post?text=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F%0D%0A%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword1%20" target="_blank" rel="noopener" title="Megosztás Threads-en"><span class="visually-hidden">Megosztás Threads-en</span></a>
+                <a class="share-link fa-brands fa-reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F&title=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum" target="_blank" rel="noopener" title="Megosztás Reddit-en"><span class="visually-hidden">Megosztás Reddit-en</span></a>
+                <a class="share-link fa-brands fa-pinterest" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Pinterest-en"><span class="visually-hidden">Megosztás Pinterest-en</span></a>
+                <a class="share-link fa-brands fa-tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Tumblr-ön"><span class="visually-hidden">Megosztás Tumblr-ön</span></a>
             </div>
 
             <div class="col-md-auto col-12 share-link-container d-none">
-                <a class="facebook-messenger-link share-link fa-brands fa-facebook-messenger" href="javascript:void(0)" data-desktop="https://www.messenger.com/t/?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="fb-messenger://share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Facebook Messenger-en"></a>
-                <a class="whatsapp-link share-link fa-brands fa-whatsapp" href="javascript:void(0)" data-desktop="https://web.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="https://api.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás WhatsApp-on"></a>
-                <a class="viber-link share-link fa-brands fa-viber" href="javascript:void(0)" data-desktop="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Viber-en"></a>
-                <a class="telegram-link share-link fa-brands fa-telegram" href="javascript:void(0)" data-desktop="https://web.telegram.org/?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="tg://msg_url?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Telegram-on"></a>
-                <a class="skype-link share-link fa-brands fa-skype" href="javascript:void(0)" data-desktop="https://web.skype.com/share?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="skype:?chat&url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Skype-on"></a>
-                <a class="slack-link share-link fa-brands fa-slack" href="javascript:void(0)" data-desktop="https://slack.com/intl/en-in/share?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="slack://open?team=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Slack-en"></a>
+                <a class="facebook-messenger-link share-link fa-brands fa-facebook-messenger" href="javascript:void(0)" data-desktop="https://www.messenger.com/t/?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="fb-messenger://share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Facebook Messenger-en"><span class="visually-hidden">Megosztás Facebook Messenger-en</span></a>
+                <a class="whatsapp-link share-link fa-brands fa-whatsapp" href="javascript:void(0)" data-desktop="https://web.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="https://api.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás WhatsApp-on"><span class="visually-hidden">Megosztás WhatsApp-on</span></a>
+                <a class="viber-link share-link fa-brands fa-viber" href="javascript:void(0)" data-desktop="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Viber-en"><span class="visually-hidden">Megosztás Viber-en</span></a>
+                <a class="telegram-link share-link fa-brands fa-telegram" href="javascript:void(0)" data-desktop="https://web.telegram.org/?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="tg://msg_url?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Telegram-on"><span class="visually-hidden">Megosztás Telegram-on</span></a>
+                <a class="slack-link share-link fa-brands fa-slack" href="javascript:void(0)" data-desktop="https://slack.com/intl/en-in/share?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="slack://open?team=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Slack-en"><span class="visually-hidden">Megosztás Slack-en</span></a>
                 <a class="teams-link share-link share-link-icon share-link-icon-teams" href="javascript:void(0)" data-desktop="https://teams.microsoft.com/share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="msteams://share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Teams-en">
-                    <img src="/img/icon-teams.svg" alt="icon-teams" width="24" height="24">
+                    <img src="/img/icon-teams.svg" alt="icon-teams" width="24" height="24"><span class="visually-hidden">Megosztás Teams-en</span>
                 </a>
             </div>
 
             <div class="col-md-auto col-12 share-link-container">
-                <a class="share-link fa-solid fa-envelope" href="mailto:?subject=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum&body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Email-en"></a>
+                <a class="share-link fa-solid fa-envelope" href="mailto:?subject=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum&body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Email-en"><span class="visually-hidden">Megosztás Email-en</span></a>
                 <a class="gmail-link share-link share-link-icon share-link-icon-gmail" href="javascript:void(0)" data-desktop="https://mail.google.com/mail/?view=cm&fs=1&to=&su=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum&body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" data-mobile="mailto:?subject=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum&body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Gmail-en">
-                    <img src="/img/icon-gmail.svg" alt="icon-gmail" width="24" height="24">
+                    <img src="/img/icon-gmail.svg" alt="icon-gmail" width="24" height="24"><span class="visually-hidden">Megosztás Gmail-en</span>
                 </a>
-                <a class="share-link fa-solid fa-comment-sms" href="sms:?body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Sms-ben"></a>
-                <a class="share-link fa-solid fa-copy" href="javascript:void(0)" onclick="copyToClipboard('https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F', this)" title="Link másolása"></a>
+                <a class="share-link fa-solid fa-comment-sms" href="sms:?body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Sms-ben"><span class="visually-hidden">Megosztás Sms-ben</span></a>
+                <a class="share-link fa-solid fa-copy" href="javascript:void(0)" onclick="copyToClipboard('https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F', this)" title="Link másolása"><span class="visually-hidden">Link másolása</span></a>
             </div>
         </div>
                             </div>
@@ -151,12 +150,12 @@
             <div class="col-lg-3 col-md-4">
                 <div id="sidebar">
                     <div id="dailyMemeContainer" class="sidebar-section">
-                        <h2 class="sidebar-title">Nap Mémje</h2>
+                        <span class="sidebar-title">Nap Mémje</span>
                         <hr />
                         <div id="dailyMeme"></div>
                     </div>
                     <div id="tagCloudContainer" class="sidebar-section">
-                        <h2 class="sidebar-title">Címkefelhő</h2>
+                        <span class="sidebar-title">Címkefelhő</span>
                         <hr />
                         <div id="tagCloud"></div>
                     </div>
@@ -214,34 +213,33 @@
     <footer class="text-white py-2">
         <div class="row share-link-main-container">
             <div class="col-md-auto col-12 share-link-container">
-                <a class="share-link fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Facebook-on"></a>
-                <a class="share-link fa-brands fa-x-twitter" href="https://x.com/intent/post?text=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F%0D%0A%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword1%20%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword2%20%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword3" target="_blank" rel="noopener" title="Megosztás X-en/Twitter-en"></a>
-                <a class="share-link fa-brands fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás LinkedIn-en"></a>
-                <a class="share-link fa-brands fa-threads" href="https://threads.net/intent/post?text=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F%0D%0A%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword1%20" target="_blank" rel="noopener" title="Megosztás Threads-en"></a>
-                <a class="share-link fa-brands fa-reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F&title=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum" target="_blank" rel="noopener" title="Megosztás Reddit-en"></a>
-                <a class="share-link fa-brands fa-pinterest" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Pinterest-en"></a>
-                <a class="share-link fa-brands fa-tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Tumblr-en"></a>
+                <a class="share-link fa-brands fa-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Facebook-on"><span class="visually-hidden">Megosztás Facebook-on</span></a>
+                <a class="share-link fa-brands fa-x-twitter" href="https://x.com/intent/post?text=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F%0D%0A%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword1%20%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword2%20%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword3" target="_blank" rel="noopener" title="Megosztás X-en/Twitter-en"><span class="visually-hidden">Megosztás X-en/Twitter-en</span></a>
+                <a class="share-link fa-brands fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás LinkedIn-en"><span class="visually-hidden">Megosztás LinkedIn-en</span></a>
+                <a class="share-link fa-brands fa-threads" href="https://threads.net/intent/post?text=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F%0D%0A%23Narancs%2CTetves%C3%89sDug%C3%B3Testkeyword1%20" target="_blank" rel="noopener" title="Megosztás Threads-en"><span class="visually-hidden">Megosztás Threads-en</span></a>
+                <a class="share-link fa-brands fa-reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F&title=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum" target="_blank" rel="noopener" title="Megosztás Reddit-en"><span class="visually-hidden">Megosztás Reddit-en</span></a>
+                <a class="share-link fa-brands fa-pinterest" href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Pinterest-en"><span class="visually-hidden">Megosztás Pinterest-en</span></a>
+                <a class="share-link fa-brands fa-tumblr" href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Tumblr-ön"><span class="visually-hidden">Megosztás Tumblr-ön</span></a>
             </div>
 
             <div class="col-md-auto col-12 share-link-container d-none">
-                <a class="facebook-messenger-link share-link fa-brands fa-facebook-messenger" href="javascript:void(0)" data-desktop="https://www.messenger.com/t/?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="fb-messenger://share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Facebook Messenger-en"></a>
-                <a class="whatsapp-link share-link fa-brands fa-whatsapp" href="javascript:void(0)" data-desktop="https://web.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="https://api.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás WhatsApp-on"></a>
-                <a class="viber-link share-link fa-brands fa-viber" href="javascript:void(0)" data-desktop="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Viber-en"></a>
-                <a class="telegram-link share-link fa-brands fa-telegram" href="javascript:void(0)" data-desktop="https://web.telegram.org/?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="tg://msg_url?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Telegram-on"></a>
-                <a class="skype-link share-link fa-brands fa-skype" href="javascript:void(0)" data-desktop="https://web.skype.com/share?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="skype:?chat&url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Skype-on"></a>
-                <a class="slack-link share-link fa-brands fa-slack" href="javascript:void(0)" data-desktop="https://slack.com/intl/en-in/share?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="slack://open?team=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Slack-en"></a>
+                <a class="facebook-messenger-link share-link fa-brands fa-facebook-messenger" href="javascript:void(0)" data-desktop="https://www.messenger.com/t/?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="fb-messenger://share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Facebook Messenger-en"><span class="visually-hidden">Megosztás Facebook Messenger-en</span></a>
+                <a class="whatsapp-link share-link fa-brands fa-whatsapp" href="javascript:void(0)" data-desktop="https://web.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="https://api.whatsapp.com/send?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás WhatsApp-on"><span class="visually-hidden">Megosztás WhatsApp-on</span></a>
+                <a class="viber-link share-link fa-brands fa-viber" href="javascript:void(0)" data-desktop="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="viber://forward?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Viber-en"><span class="visually-hidden">Megosztás Viber-en</span></a>
+                <a class="telegram-link share-link fa-brands fa-telegram" href="javascript:void(0)" data-desktop="https://web.telegram.org/?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="tg://msg_url?url=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Telegram-on"><span class="visually-hidden">Megosztás Telegram-on</span></a>
+                <a class="slack-link share-link fa-brands fa-slack" href="javascript:void(0)" data-desktop="https://slack.com/intl/en-in/share?text=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="slack://open?team=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Slack-en"><span class="visually-hidden">Megosztás Slack-en</span></a>
                 <a class="teams-link share-link share-link-icon share-link-icon-teams" href="javascript:void(0)" data-desktop="https://teams.microsoft.com/share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" data-mobile="msteams://share?link=https://www.mmtm.hu/meme/narancs-tetves-es-dugo/" target="_blank" rel="noopener" title="Megosztás Teams-en">
-                    <img src="/img/icon-teams.svg" alt="icon-teams" width="24" height="24">
+                    <img src="/img/icon-teams.svg" alt="icon-teams" width="24" height="24"><span class="visually-hidden">Megosztás Teams-en</span>
                 </a>
             </div>
 
             <div class="col-md-auto col-12 share-link-container">
-                <a class="share-link fa-solid fa-envelope" href="mailto:?subject=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum&body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Email-en"></a>
+                <a class="share-link fa-solid fa-envelope" href="mailto:?subject=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum&body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Email-en"><span class="visually-hidden">Megosztás Email-en</span></a>
                 <a class="gmail-link share-link share-link-icon share-link-icon-gmail" href="javascript:void(0)" data-desktop="https://mail.google.com/mail/?view=cm&fs=1&to=&su=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum&body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" data-mobile="mailto:?subject=Narancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%20-%20Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum&body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Gmail-en">
-                    <img src="/img/icon-gmail.svg" alt="icon-gmail" width="24" height="24">
+                    <img src="/img/icon-gmail.svg" alt="icon-gmail" width="24" height="24"><span class="visually-hidden">Megosztás Gmail-en</span>
                 </a>
-                <a class="share-link fa-solid fa-comment-sms" href="sms:?body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Sms-ben"></a>
-                <a class="share-link fa-solid fa-copy" href="javascript:void(0)" onclick="copyToClipboard('https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F', this)" title="Link másolása"></a>
+                <a class="share-link fa-solid fa-comment-sms" href="sms:?body=Magyar%20M%C3%A9mt%C3%B6rt%C3%A9neti%20M%C3%BAzeum%0D%0ANarancs%2C%20Tetves%20%C3%A9s%20Dug%C3%B3%0D%0Ahttps%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F" target="_blank" rel="noopener" title="Megosztás Sms-ben"><span class="visually-hidden">Megosztás Sms-ben</span></a>
+                <a class="share-link fa-solid fa-copy" href="javascript:void(0)" onclick="copyToClipboard('https%3A%2F%2Fwww.mmtm.hu%2Fmeme%2Fnarancs-tetves-es-dugo%2F', this)" title="Link másolása"><span class="visually-hidden">Link másolása</span></a>
             </div>
         </div>
         <div class="container text-center">
@@ -263,7 +261,7 @@
         </div>
     </footer>
 
-    <a href="#top" id="backToTop" class="back-to-top fa-solid fa-arrow-up" title="Vissza az oldal tetejére"></a>
+    <a href="#top" id="backToTop" class="back-to-top fa-solid fa-arrow-up" title="Vissza az oldal tetejére"><span class="visually-hidden">Vissza az oldal tetejére</span></a>
 
     <div id="cookieBanner" class="fixed-bottom bg-dark text-white py-3 px-4 text-center">
         <p class="mb-0 d-inline">Ez a weboldal nem gyűjt személyes adatokat közvetlenül. Azonban harmadik fél általi szolgáltatásokat használ (pl. YouTube, Google Analytics), amelyek sütiket/cookie-kat használhatnak a felhasználói élmény javítása és elemzés céljából. <span class="text-nowrap"><a href="/legal/privacy-policy.html" class="text-info">További információk</a></span></p>
