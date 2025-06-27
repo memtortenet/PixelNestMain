@@ -146,14 +146,32 @@
     <div class="container my-2">
         <h1 class="text-center">404 - A keresett oldal nem található</h1>
         <hr class="border-2" />
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div id="sidebar">
+                    <div id="dailyMemeContainer" class="sidebar-section">
+                        <h2 class="sidebar-title">Nap Mémje</h2>
+                        <hr />
+                        <div id="dailyMeme"></div>
+                    </div>
+                    <div id="tagCloudContainer" class="sidebar-section">
+                        <h2 class="sidebar-title">Címkefelhő</h2>
+                        <hr />
+                        <div id="tagCloud"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8">
                 <p class="text-justify mt-2 mb-0">
                     Sajnáljuk, de a keresett oldal nem létezik. Lehet, hogy elmozdult vagy sosem létezett!
                 </p>
                 <br />
 
-    </div>
-    <div class="text-center">
-        <a class="btn btn-secondary" href="javascript:void(0)" onclick="randomMeme()">Nézz meg egy random mémet!</a>
+                <div class="text-center">
+                    <a class="btn btn-success" href="javascript:void(0)" onclick="randomMeme()">Nézz meg egy random mémet!</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="text-white py-2">
