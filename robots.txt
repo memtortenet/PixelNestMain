@@ -1,4 +1,3 @@
 ﻿User-agent: *
-Disallow: /search.html?query=
 
 Sitemap: https://www.mmtm.hu/sitemap.xml

@@ -18,12 +18,6 @@
         <priority>0.3</priority>
     </url>
 
-    <!-- Search Page -->
-    <url>
-        <loc>https://www.mmtm.hu/search.html</loc>
-        <priority>0.3</priority>
-    </url>
-
     <!-- Legal Pages -->
     <url>
         <loc>https://www.mmtm.hu/legal/privacy-policy.html</loc>
