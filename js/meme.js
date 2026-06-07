@@ -1,1 +1,42 @@
-document.addEventListener("DOMContentLoaded",function(){var f=isMobileDevice(),e=document.querySelectorAll(".header-anchor"),u,t;e.forEach(function(n){n.style.display=f?"none":"block"});var o=document.getElementById("description-toggle-button"),n=document.getElementById("description-toggle-content"),i=document.getElementById("description-toggle-icon"),r=document.getElementById("description-toggle-text");o.addEventListener("click",function(){n.classList.contains("expanded")?(n.style.maxHeight="0",n.classList.remove("expanded"),i.style.transform="rotate(0)",r.textContent="(lenyitás)"):(n.style.maxHeight=n.scrollHeight+"px",n.classList.add("expanded"),i.style.transform="rotate(90deg)",r.textContent="(összecsukás)")});u=localStorage.getItem(`accepted-content-warning-${currentPage}`);u||(t=document.getElementById("contentWarningOverlay"),t&&(t.classList.add("active"),document.getElementById("acceptContentWarning").addEventListener("click",function(){localStorage.setItem(`accepted-content-warning-${currentPage}`,"true");t.classList.remove("active")}),document.getElementById("leaveContentWarning").addEventListener("click",function(){window.location.href="/"})))})
+﻿document.addEventListener("DOMContentLoaded", function () {
+    var isMobile = isMobileDevice();
+    var anchors = document.querySelectorAll(".header-anchor");
+    anchors.forEach(function (anchor) {
+        anchor.style.display = isMobile ? "none" : "block";
+    });
+
+    var toggleButton = document.getElementById("description-toggle-button");
+    var toggleContent = document.getElementById("description-toggle-content");
+    var toggleIcon = document.getElementById("description-toggle-icon");
+    var toggleText = document.getElementById("description-toggle-text");
+    toggleButton.addEventListener("click", function () {
+        if (toggleContent.classList.contains("expanded")) {
+            toggleContent.style.maxHeight = "0";
+            toggleContent.classList.remove("expanded");
+            toggleIcon.style.transform = "rotate(0)";
+            toggleText.textContent = "(lenyitás)";
+        } else {
+            toggleContent.style.maxHeight = toggleContent.scrollHeight + "px";
+            toggleContent.classList.add("expanded");
+            toggleIcon.style.transform = "rotate(90deg)";
+            toggleText.textContent = "(összecsukás)";
+        }
+    });
+
+    var acceptedContentWarning = localStorage.getItem(`accepted-content-warning-${currentPage}`);
+    if (!acceptedContentWarning) {
+        var warningOverlay = document.getElementById("contentWarningOverlay");
+        if (warningOverlay) {
+            warningOverlay.classList.add("active");
+
+            document.getElementById("acceptContentWarning").addEventListener("click", function () {
+                localStorage.setItem(`accepted-content-warning-${currentPage}`, "true");
+                warningOverlay.classList.remove("active");
+            });
+
+            document.getElementById("leaveContentWarning").addEventListener("click", function () {
+                window.location.href = "/";
+            });
+        }
+    }
+});
